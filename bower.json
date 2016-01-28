@@ -1,0 +1,24 @@
+{
+  "name": "keytools-app",
+  "homepage": "https://github.com/dgoradia/keytools-app",
+  "authors": [
+    "Dru Goradia <dru@atlasdigital.tv>"
+  ],
+  "description": "Helpful SSH Tools",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-bootstrap": "~1.1.1",
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.17"
+  }
+}

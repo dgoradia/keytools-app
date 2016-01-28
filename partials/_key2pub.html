@@ -1,0 +1,18 @@
+<form class="col-md-8">
+  <div class="alert alert-danger" role="alert" ng-show="error">
+    {{error}}
+  </div>
+  <div class="form-group">
+    <label for="key">RSA Private Key</label>
+    <textarea name="key" id="" rows="10" class="form-control" ng-model="key" ng-init="key=''"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="passphrase">Passphrase <span class="small">(optional)</span></label>
+    <input type="text" class="form-control" ng-model="passphrase" ng-init="passphrase=''">
+  </div>
+  <button type="submit" class="btn btn-primary" ng-click="extractPubkey()">Extract Public Key</button>
+</form>
+<div class="col-md-4" ng-show="publicKey">
+  <label>RSA Public Key</label>
+  <pre>{{publicKey}}</pre>
+</div>
